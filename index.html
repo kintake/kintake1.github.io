@@ -15,25 +15,25 @@
 	
 	<link rel="shortcut icon" type="image/png" href="logo off.png"/>
 	<style> 
-	.box1{max-width: 100%;
+	.box1{max-width: 810px;
 	height:10px;
 	background-color:black;
 	float:left;
 	padding: 45px
 	}
-		.box1a{max-width:100%;
+		.box1a{width:810px;
 	height:400px;
 	background-color:black;
 	float:left;
 	padding: 45px
 	}
-		.box2{max-width:100%;
+		.box2{width:810px;
 	height:300px;
 	background-color:pink;
 	float:left;
 	padding: 45px
 	}
-		.box3{max-width:100%;
+		.box3{width:540px;
 	height:500px;
 	background-color:white;
 	float: left;
@@ -45,7 +45,7 @@
 	padding: 10px
 	}
 		.box4{width:810px;
-	height:200px;
+	height:250px;
 	background-color:black;
 	clear: both;
 	padding: 45px
@@ -57,17 +57,21 @@
 </head>
 
 <body>
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0"></script>
+	
 	<div class="box1a">
 		<font face="Helvetica Neue" color=#FFFFFF>
-			<a href="đăng ký.html"> Đăng ký</a> | <a href="đăng nhập.html">Đăng nhập </a>
+			<a href="đăng ký.html"> Đăng ký</a> | <a href="đăng nhập.html">Đăng nhập </a>   <input type="text" name="search" placeholder="Search..">
 			<br>
-			<img src="waffle logo top landing page.jpg" width="810px" height="220px">
+			<a href="index.html">
+			<img src="waffle logo top landing page.jpg" width="810px" height="220px"></a>
 			<br><br>
 			
 		<center> 
 		<div class="boxheader">
 								 Menu </div> 	
-			<div class="boxheader"> Ưu đãi  </div>  
+			<div class="boxheader"> <a href="ưu đãi.html"> Ưu đãi </a> </div>  
 				<div class="boxheader"> Về chúng tôi  </div> 
 					<div class="boxheader"> Tuyển dụng </div> 
 		  <div class="boxheader">  Liên hệ </div>
@@ -91,10 +95,11 @@
 	
 	<marquee onmouseout=this.start() onmouseover=this.stop()> 
 		<FONT SIZE=5 COLOR= #FFC51C font face= "Helvetica Neue">
-		 <i> GIẢM 5% CHO TẤT CẢ CÁC ĐƠN ĐẶT HÀNG KHI ĐĂNG KÝ TRỞ THÀNH MỘT <b>WAFFLE ADDICT</b> </i> </marquee> 
+		 <i> GIẢM 5% CHO TẤT CẢ CÁC ĐƠN ĐẶT HÀNG KHI ĐĂNG KÝ TRỞ THÀNH MỘT  <b>WAFFLE ADDICT</b> </i> </marquee> 
 		</div> </A>
 		<br>
-		<img src="banner.jpg" width=900px >
+		<div class="container">
+		<img src="banner.jpg" width=900px ><button class="btn"> <span> <font color="white"> Mua Ngay</font></button> </div>
 		
 <div class="boxmenu1">
 		<font face= "iCiel Brush Up" font size="+5">MENU</font>
@@ -258,36 +263,59 @@ Lorem ipsum dolor sit amet, consectetuer
 <br>
 
 <iframe width="880" height="615" src="https://www.youtube.com/embed/YmAWIEEzHn0" frameborder="0" allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+			<br>
+			
+			<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div> 
+			
 
 <div class="box4">
 	
-	
-	<table style: width=30%>
+	<center>
+	<table style="width:80%">
   <tr> <font face="helvetica">
-    <th> <font face="helvetica"><h4>Liên hệ</h4></th>
-    <th><font face="helvetica"><h4>Chi nhánh</h4></th>
-    <th><font face="helvetica"><h4>Follow Us</h4></th> 
+    <th> <font face="helvetica" ><h4>Liên hệ</h4></th>
+    <th><font face="helvetica"><h4>Chi nhánh</h4>
+		 <th><font face="helvetica"><h4>Bản đồ</h4>
+ 
   </tr>
   <tr><font face="helvetica"> <div class="highlight">
     <td><font face="helvetica">info@waffleaddict.co</td>
-    <td><font face="helvetica">123 Pasteur, District 3</td></font></div>
-    <td><img src="images (1).png" height="50px" width="50px">&nbsp;&nbsp;&nbsp;<img src="facebook_circle-512.png" height="50px" width="50px"></td>
-  </tr>
+    <td><font face="helvetica">1 Pasteur, District 3</td></font></div>
+	  <td rowspan=2><div id="map" style="width:50px;height:50px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62708.25297264069!2d106.69705580000002!3d10.790942099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528cade02bca9%3A0x1406a3e90a16f747!2sWaffle+Place+VN!5e0!3m2!1sen!2s!4v1565193288660!5m2!1sen!2s" width="230" height="215"frameborder="0" style="border:0" allowfullscreen></iframe></td>
+   
+  </tr> 
   <tr> 
     <td> <font face="helvetica"> +91 8291047470</td>
     <td><font face="helvetica">1 Le loi, District 1</td>
     <td></td>
+	  
   </tr>
+			 <tr>
+			<td></td></tr>
+		<tr>
+			<td>
+			<b><font color="white" font face="helvetica">Follow Us</b></font></td>
+			<tr>
+			<td></td></tr>
+		</tr>
+		<tr>
+			<td > <img src="images (1).png" height="20px" width="20px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="facebook_circle-512.png" height="20px" width="20px"></td>
+			
+			
+		</tr>
 
-</
+</div>
+	
+        </div>
 		
 
 	
 	
 	
 		</div>
-
-		
+	</center>
+			
 	
 	
 	

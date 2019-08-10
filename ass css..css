@@ -8,13 +8,18 @@ margin:10px; border-radius: 10px; border-shadow: 5px 5px 5px gray;float:left}
  box-shadow: blur-radius: 5 pixel  gray;
  padding:10 pixel;
  margin:5 pixel;
- text-align:center}
+ text-align:center;
+ }
+
+
 
  .san-pham .ten{ font-size:larger; font-kerning: auto
  font-variant:small-caps;
- color:#FFC609;font-kerning: auto;font-family:"iCiel Altus Serif", "iCiel Brush Up", "iCiel ButterScotch";font-size: 25px}
+ color:#FFC609;font-kerning: auto;font-family:"iCiel Altus Serif", "iCiel Brush Up", "iCiel ButterScotch";font-size: 25px;transtion:1s;}
+.san-pham .ten:hover{transform:scale(1.3); transition: 0.5s; color: #46200B}
 
- .san-pham img{max-width:95%}
+ .san-pham img{max-width:95%; transtion:1s;}
+.san-pham img:hover{transform:scale(1.3); transition: 0.5s; }
  
  .san-pham .gia{color:white; font-family:"iCiel Altus Serif", "iCiel Brush Up", "iCiel ButterScotch";
  font-weight:bold;font-size: 20px}
@@ -82,19 +87,71 @@ text-align: center}
 .ten:hover{color:white; }
 
 table, td, th {
-  border: 1px solid black; color: white; width: 800px
+  border: 1px solid black; color: white; width: 500px; padding: 1px; font-size: 10px;
 }
 
 table {
-  border-collapse: collapse; color: white
+  border-collapse: collapse; color: white;
   width: 100%;
 }
 
 th {
-  height: 50px; color: white; text-align: left
+  height: 20px; color: white; text-align: left
 }
 .highlight:hover{color:#FFCC48}
 td:hover{color:#FFCC48;cursor: pointer}
+
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 900px;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: ưwhite;
+  font-size: 10px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; 
+}
+
+.container .btn:hover {
+  background-color:#FFC10B;
+}
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+	float: right;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 20px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 50%;
+}
 
 
 
